@@ -25,6 +25,13 @@
     z-index: 99;
 }
 
+.back-to-top-whatsapp {
+    position: fixed;
+    right: 45px;
+    bottom: 135px;
+    z-index: 99;
+}
+
 /* Spinner */
 #spinner{
     opacity: 0;
