@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <title>Aerodinâmica</title>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">    
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Rua Arlindo Luz, 1119 - Centro, Ourinhos - SP</small>
+                </div>
+
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Seg - Sex : 13:30  - 18:30 | Sáb: 09:30 - 13:00</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                   <a href="https://wa.me/message/ENBTOZIKSESXE1"> 
+                        <small class="fab fa-whatsapp text-primary me-2"></small>
+                        <small>(14) 99762-7655</small>
+                    </a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/aerodinamicaescoladeaviacao/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.youtube.com/channel/UCAw0Nj6DsMGoVMveHnheaEg" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                    </a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.tiktok.com/@aerodinamica_ea" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                        </svg>
+                    </a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/aerodinamica_escoladeaviacao/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="./images/logo-editada.png" alt="Logo Aerodinâmica" width="150px">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="#about" class="nav-item nav-link click-scroll">Sobre</a>
+                <a href="#course" class="nav-item nav-link">Cursos</a>
+                <a href="#members" class="nav-item nav-link">Nosso time</a>
+                <a href="#contact" class="nav-item nav-link">Contato</a>
+            </div>
+            <a href="" class="btn btn-primary py-4 px-5 d-block">
+                Curso Teórico de Piloto Privado EAD
+                <i class="fa fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container mt-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Curso de Comissário de Vôo</h1>
+                    </header>
+
+                    <!-- Post content-->
+                    <section class="mb-5">
+
+                        <h2 class="fw-bolder mb-4 mt-5">
+                            Descrição
+                        </h2>
+
+                        <p class="fs-6 mb-4">
+                            O curso de comissário de voo consiste em uma formação sólida e indispensável para aspirante a função, por meio de conhecimentos teóricos e práticos. Ao término do curso, o aluno estará apto a realizar o exame de conhecimento teórico da ANAC, e participar de processos seletivos para ingressar em companhias aéreas, bem como a todos os treinamentos posteriores a que se submeterá no exercício da função de comissário de voo. 
+                        </p>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+
+                                <h2 class="fw-bolder mb-4 mt-5">
+                                    Pré-Requisitos
+                                </h2>
+
+                                <div class="d-flex align-items-start">
+                                    
+                                    <div>
+                                        <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="ms-2">
+
+                                        <p class="fs-6 mb-2">
+                                            Ter 18 anos;
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-start">
+                                    
+                                    <div>
+                                        <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="ms-2">
+
+                                        <p class="fs-6 mb-2">
+                                            Ensino Médio Completo;
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-start">
+                                    
+                                    <div>
+                                        <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="ms-2">
+
+                                        <p class="fs-6 mb-2">
+                                            Recomenda-se a realização do exame de certificado médico aeronáutico em clínicas credenciadas. É obrigatório a apresentação do CMA (certificado médico aeronáutico) antes das instruções práticas do curso.
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <h2 class="fw-bolder mb-4 mt-5">
+                                    Documentos para matrícula
+                                </h2>
+
+                                <div class="d-flex align-items-start">
+                                    
+                                    <div>
+                                        <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="ms-2">
+
+                                        <p class="fs-6 mb-2">
+                                            CMA 1ª Classe válido (podendo ser tirado durante o curso);
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-start">
+                                    
+                                    <div>
+                                        <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="ms-2">
+
+                                        <p class="fs-6 mb-2">
+                                            1 foto 3x4;
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex align-items-start">
+                                    
+                                    <div>
+                                        <svg class="text-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                        </svg>
+                                    </div>
+
+                                    <div class="ms-2">
+
+                                        <p class="fs-6 mb-2">
+                                            Cópia simples de:
+                                        </p>
+
+                                        <ul>
+                                            <li>RG, CPF e Título de Eleitor;</li>
+                                            <li>Certificado de Reservista;</li>
+                                            <li>Comprovante de Endereço;</li>
+                                            <li>Certificado de Conclusão do Ensino Médio;</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid overflow-hidden px-lg-0">
+        <div class="card text-bg-dark">
+            <img src="https://img.freepik.com/fotos-gratis/funcionarios-femininos-sorridentes-em-pe_107420-85103.jpg?t=st=1708701749~exp=1708705349~hmac=1ccdcf06f610e58a948737b688f046b82e546d5e418dc37a4b73d02d2519fea3&w=996" class="card-img" alt="...">
+            <div class="card-img-overlay text-center p-4">
+                <h2 class="card-title text-white mb-5">Garanta uma vaga agora com os melhores preços</h2>
+                <p class="card-text text-white fs-4 fw-medium mb-2">Entre em contato para saber mais</p>
+                <p class="card-text text-white fs-6 fw-medium mb-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                        <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5m2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.04 8.04 0 0 0 .86 5.387M11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.04 8.04 0 0 0-3.527-3.527"/>
+                    </svg>
+                    
+                    <small>Duração de 03 meses e meio</small>
+                </p>
+
+                <a href="#" class="btn btn-primary">QUERO SER UM COMISSÁRIO(A)</a>
+            </div>
+          </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <article>
+                    <section>
+                        <h2 class="fw-bolder mb-4 mt-5">
+                            Disciplinas do curso
+                        </h2>
+
+                        <ul>
+                            <li class="fs-6">Apresentação pessoal;</li>
+                            <li class="fs-6">Comissário de voo; </li>
+                            <li class="fs-6">Sistema de Aviação Civil; </li>
+                            <li class="fs-6">Regulamento da Aviação Civil; </li>
+                            <li class="fs-6">Sobrevivência na Selva e  Primeiros Socorros;  </li>
+                            <li class="fs-6">Sobrevivência no Mar e Combate ao Fogo;   </li>
+                            <li class="fs-6">entre outras.</li>
+                        </ul>   
+                        
+
+                        <h2 class="fw-bolder mb-4 mt-5">
+                            Ingresso na Profissão
+                        </h2>
+
+                        <p class="fs-6 mb-2">
+                            A aprovação no curso concede ao concluinte na qualidade de candidato a licença de comissário de voo, o direito de realizar os exames de conhecimentos teóricos da ANAC. A aprovação nesses exames é condição para que o candidato seja contratado por empresa de transporte aéreo.
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+
+        <div class="container py-5">
+
+            <div class="row g-5">
+
+                <div class="col-lg-8 col-md-6">
+
+                    <h4 class="text-light mb-4">Endereço</h4>
+
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Rua Arlindo Luz, 1119 - Centro, Ourinhos - SP</p>
+
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(14) 99762-7655</p>
+
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/aerodinamica_escoladeaviacao/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/aerodinamicaescoladeaviacao/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UCAw0Nj6DsMGoVMveHnheaEg" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <a class="btn btn-outline-light btn-social" href="https://www.tiktok.com/@aerodinamica_ea" target="_blank">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                            </svg>
+
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Links Rápidos</h4>
+                    <a class="btn btn-link" href="https://www.redemet.aer.mil.br/" target="_blank">Metar</a>
+                    <a class="btn btn-link" href="https://www.gov.br/anac/pt-br/sistemas/rab" target="_blank">RAB</a>
+                    <a class="btn btn-link" href="https://aisweb.decea.mil.br/" target="_blank">Rotaer e Notam</a>
+                    <a class="btn btn-link" href="https://www.flightradar24.com/" target="_blank">Flight Radar</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">Aerodinâmica Escola de Aviação Civil</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <a href="https://wa.me/message/ENBTOZIKSESXE1" target="_blank" class="btn btn-lg btn-success btn-lg-square rounded-0 back-to-top-whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/click-scroll.js"></script>
+
+</body>
+
+</html>
